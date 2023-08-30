@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/popup.css">
+        <script src="js/popup.js" defer></script>
+        <title>Extension Popup</title>
+    </head>
+    <body>
+        <div class="content">
+            <div class="color-group">
+                <h1>Customize your display</h1>
+                <div id="color-history" class="color-element">
+                    <h2>Color history</h2>
+                    <div id="color-history__selectors" class="color-element__background">
+
+                    </div>
+                </div>
+
+                <div class="color-element">
+                    <h2>Color</h2>
+                    <div id="color-picker-div" class="color-element__background border">
+                        <input type="color" id="color-picker-div__selector" class="pointer">
+                        <span id="color-name"></span>
+                    </div>
+                </div>
+            </div>
+
+            <button id="saveButton" class="round pointer">Save</button>
+        </div>
+    </body>
+</html>

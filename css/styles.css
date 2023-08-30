@@ -1,0 +1,51 @@
+:root {
+    --custom-color: #00ffc8;
+    --custom-color-hover: #39eec7;
+    --custom-color-click: #44e0bf;
+    --custom-color-darken: #00ffc81a;
+    --custom-color-darken-click: #00ffc83d;
+}
+
+.r-s224ru  {
+    background-color: var(--custom-color) !important;
+}
+
+.r-1iwjfv5 {
+    background-color: var(--custom-color-hover) !important;
+}
+
+.r-pxc13i, .r-nyvfd3 {
+    background-color: var(--custom-color-click) !important;
+}
+
+.r-15azkrj, .r-h7o7i8 {
+    background-color: var(--custom-color-darken) !important;
+}
+
+.r-1x669os {
+    background-color: var(--custom-color-darken-click) !important;
+}
+
+.r-o6sn0f {
+    color: var(--custom-color) !important;
+}
+
+.r-14u09jm, .r-156p8rw {
+    border-color: var(--custom-color) !important;
+}
+
+.r-jgqioj {
+    border-right-color: var(--custom-color) !important;
+}
+
+.r-5gofit, .r-1199xna {
+    box-shadow: var(--custom-color) 0px 0px 2px 2px !important;
+}
+
+.r-1luo2wq {
+    caret-color: var(--custom-color) !important;
+}
+
+svg circle:nth-child(3) {
+    stroke: var(--custom-color) !important;
+}

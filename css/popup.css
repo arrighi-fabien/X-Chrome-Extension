@@ -1,0 +1,138 @@
+:root {
+    --color-background: #0B0C0E;
+    --color-bakcground-2: #16181C;
+    --color-font: #E7E9EA;
+    --color-detail: #71767B;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    width: fit-content;
+    color: var(--color-font);
+    background: var(--color-background);
+}
+
+.content {
+    display: inline-flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--color-detail);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.color-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.color-element {
+    width: 361px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.color-element__background {
+    background: var(--color-bakcground-2);
+    border-radius: 16px;
+}
+
+#color-picker-div {
+    position: relative;
+    width: 100%;
+    height: 61px;
+    margin: 0 auto 0 auto;
+}
+
+input[type="color"] {
+    width: 100%;
+    height: 100%;
+    background: var(--color-detail);
+    opacity: 0;
+    border-radius: 16px;
+}
+
+#color-name {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    font-weight: 700;
+    pointer-events: none;
+}
+
+button {
+    display: block;
+    border: none;
+    background: var(--color-detail);
+    padding: 5px 10px;
+    color: var(--color-font);
+    margin: auto;
+    transition: opacity 0.2s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#color-history {
+    display: none;
+}
+
+#color-history__selectors {
+    width: 361px;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    background: var(--color-bakcground-2);
+    padding: 0 38.5px;
+    border-radius: 16px;
+}
+
+.color-history__selectors__btn {
+    width: 38px;
+    height: 38px;
+    transition: scale 0.2s ease-in-out;
+}
+
+.color-history__selectors__btn:hover {
+    scale: 1.05;
+}
+
+#saveButton {
+    font-size: 1rem;
+    padding: 10px 16px;
+}
+
+.round {
+    border-radius: 100px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.border {
+    border: 2px solid var(--color-detail);
+}

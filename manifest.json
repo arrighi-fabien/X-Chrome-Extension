@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "X color changer",
+  "description": "Put a personal touch on Twitter by changing the original blue color to any color you want.",
+  "version": "1.0",
+  "author": "Fabien Arrighi",
+  "action": {
+    "default_title": "X color changer",
+    "default_icon": {
+      "64": "img/icon.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*", "https://x.com/*"],
+      "js": ["js/content.js"],
+      "css": ["css/styles.css"]
+    }
+  ],
+  "icons": {
+    "64": "img/icon.png"
+  }
+}
